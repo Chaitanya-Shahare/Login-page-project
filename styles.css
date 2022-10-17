@@ -1,0 +1,105 @@
+body {
+	background-image: linear-gradient(90deg, blue, skyblue);
+	max-width: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card, .card-faded {
+	z-index: -1;
+}
+
+.card-faded {
+font-family: 'Signika', sans-serif;
+	background-color: rgba(255,255,255,0.4);
+	width: 60%;
+	height: 350px;
+	border-radius: 10px;
+	position: absolute;
+	top: 15%;
+	transform: rotate(-5deg);
+	z-index: 1;
+}
+
+.card {
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 350px;
+	border-radius: 10px;
+	transform: rotate(5deg);
+	position: absolute;
+	transform: skewY(50px);
+}
+
+.title {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+button {
+	width: 85%;
+	margin: 10px auto auto 10px;
+	border: none;
+	border-radius: 7px;
+	height: 30px;
+	background-color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+button:hover {
+	transform: scale(1.03);
+	color: rgb(49, 58, 66);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 10px;
+	font-style: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	transform: scale(1.03);
+	color: rgb(49, 58, 66);
+}
+
+.forgotpassword {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: -13px;
+}
+
+.signup {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: -8px;
+}
